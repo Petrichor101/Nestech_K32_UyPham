@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4.[Bài tập] Biến, kiểu dữ liệu và toán tử</title>
+    </head>
+    <body>
+        <ul style="list-style-type: none;padding-left: 0;">
+            <li>
+                <h1>Bài 1</h1>
+                <form>
+                    <ul>
+                        <li>
+                            <p>Vật lý</p>
+                            <input id="vl" value="0">
+                        </li>
+                    
+                        <li>
+                            <p>Hóa học</p>
+                            <input id="hh" value="0">
+                        </li>
+                    
+                        <li>
+                            <p>Sinh học</p>
+                            <input id="sh" value="0">
+                        </li>
+                    </ul>
+                    <br>
+                    <button style="margin-left: 20px; width:80px" onclick="(averageScore(event))">Tính điểm trung bình</button> 
+                    <input id="avg" disabled/>
+                    <br>
+                    <br>
+                    <input type="reset" style="margin-left: 20px; width: 80px">
+                </form>
+            </li>
+            <hr>
+            <li>
+                <h1>Bài 2</h1>
+                <input id = "c" oninput="ctof(event)">°C 
+                <br>
+                <br>
+                <input id = "f" oninput="ftoc(event)">°F
+            </li>
+            <hr>
+            <li>
+                <h1>Bài 3 & 4</h1>
+                <p>Nhập bán kính của hình tròn</p>
+                r = <input oninput="calc(event)">
+                <br>
+                Chu vi = <input id="p" disabled>
+                <br>
+                Diện tích = <input id="s" disabled>
+            </li>
+        </ul>
+        <script src="index.js"></script>
+    </body>
+</html>
