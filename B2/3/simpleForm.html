@@ -1,0 +1,136 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <style>
+            label{
+                width: 25%;
+                left: 0;
+                text-align: right;
+                display: inline-block;
+                color: #3a53b9;
+            }
+            li{
+                position: relative;
+                padding-bottom: 2vh;
+            }
+            .textInput{
+                margin-left: 2vw;
+                display: inline-block;
+                width: 50%
+            }
+            table{
+                margin-left: 2vw;
+                display: inline-block;
+            }
+
+            td{
+                color: #ff8453;
+
+            }
+            .buttons{
+                position:relative;
+                display:block;
+                margin:auto;
+                margin-left: 20vw;
+            }
+
+        </style>
+    
+        <fieldset
+            style="
+                font-family: Arial, Helvetica, sans-serif; 
+                width: 60vw; 
+                border-width: 10px; 
+                border-color: #d6feff; 
+                border-style: solid; 
+                margin: 0; 
+                padding: 0;
+                margin: auto;">
+            <div 
+                style="
+                    width: 95%; 
+                    height: 50px ;
+                    background-color: #ff4d1c; 
+                    color: white; 
+                    padding: 0; 
+                    font-size: 15; 
+                    box-sizing: border-box; 
+                    text-align: center; 
+                    margin: 2.5%; 
+                    margin-top: -10px;
+                    line-height: 50px;">
+                <h1>SỞ THÍCH CỦA BẠN</h1>
+            </div>
+            <div>
+                <form>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <label>
+                                Họ và Tên
+                            </label>
+                            <input name="yourName" class="textInput">
+                        </li>
+                        <li>
+                            <label>
+                                Email
+                            </label>
+                            <input name="email" class="textInput">
+                        </li>
+                        <li>
+                            <label style="vertical-align: top;">
+                                Sở thích
+                            </label>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="checkbox1">
+                                            Thể thao
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="checkbox2">
+                                            Âm nhạc
+                                            
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="checkbox3">
+                                            Đọc sách
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="checkbox4">
+                                            Lướt web
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="checkbox5">
+                                            Chơi game
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="checkbox6">
+                                            Điện ảnh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="checkbox7">
+                                            Du lịch
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                    <div class="buttons">
+                        <input type="submit" value="Gửi thông tin">
+                        <input type="reset" value="Nhập lại">
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </fieldset>
+    </body>
+</html>

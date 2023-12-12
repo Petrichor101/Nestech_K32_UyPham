@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Survey</title>
+    </head>
+    <body>
+        <style>
+            .question{
+                font-weight: bold;
+            }
+
+        </style>
+        <header>
+            <h2 class="">Market Research Survey</h2>
+            <div class="">Please take a few moments to complete this satisfaction survey. </div>
+            <hr>
+        </header>
+        <form action="abc.xyz">
+            <ul style="list-style-type: none; padding-left: 0;" >
+                <li onmouseover="handleHover(event)" onmouseleave="handleMouseLeave(event)">
+                        <div>
+                            <label class="question">
+                            What is your age range?
+                            </label>
+                            <br>
+                            
+                            <select>
+                                <option value="18-24">
+                                    <span>18-24</span>
+                                </option>
+                                <option value="25-34">
+                                    <span>25-34</span>
+                                </option>
+                                <option value="35-50">
+                                    <span>35-50</span>
+                                </option>
+                                <option value="50+">
+                                    <span>50+</span>
+                                </option>
+                            </select>
+                        </div>
+                </li>
+                <li onmouseover="handleHover(event)" onmouseleave="handleMouseLeave(event)">
+                    <div>
+                        <label class="question">
+                            What is your yearly income range?
+                        </label>
+                        <br>
+                        <select>
+                            <option value="$0 - $25,000">
+                                <span>$0 - $25,000</span>
+                            </option>
+                            <option value="$25,001 - $50,000">
+                                <span>$25,001 - $50,000</span>
+                            </option>
+                            <option value="$50,001 - $100,000">
+                                <span>$50,001 - $100,000</span>
+                            </option>
+                            <option value="$100,000+">
+                                <span>$100,000+</span>
+                            </option>
+                        </select>
+                    </div>
+                </li>
+                
+                <li onmouseover="handleHover(event)" onmouseleave="handleMouseLeave(event)">
+                    <div>
+                        <label class="question">
+                            Gender Identity
+                        </label>
+                        <br>
+                        <span>
+                            <input name="gender" type="radio" />
+                            <label>
+                                Male
+                                </span>
+                            </label>
+                        </span>
+                        <br />
+                        <span>
+                            <input type="radio" name="gender"/>
+                            <label>
+                                Female
+                            </label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" name="gender"/>
+                            <label>
+                                Nonbinary
+                                </span>
+                            </label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" name="gender"/>
+                            <label>
+                                Other
+                            </label>
+                            <br>
+                            <input type="text">
+                        </span>
+                    </div>
+                </li>
+                <li onmouseover="handleHover(event)" onmouseleave="handleMouseLeave(event)">
+                    <label class="question">Which of the following products have you purchased in the last 2 months. Please check all that applies.</label>
+                    <div>
+                        <span>
+                            <input type="checkbox">
+                            <label>
+                                Product 1
+                            </label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="checkbox">
+                            <label>
+                                Product 2
+                            </label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="checkbox">
+                            <label>
+                                Product 3
+                            </label>
+                        </span>
+                    </div>
+                <li>
+                <li onmouseover="handleHover(event)" onmouseleave="handleMouseLeave(event)">
+                    <div>
+                        <label class="question">
+                            How often would you use our new product?
+                        </label>
+                        <br>
+                        <span>
+                            <input type="radio" name="f"/>
+                            <label>
+                                Daily
+                        </span>
+                        </label>
+                        </span>
+                        <br />
+                        <span>
+                            <input type="radio" name="f"/>
+                            <label>
+                                Weekly
+                            </label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" name="f"/>
+                            <label>
+                                Monthly
+                        </span>
+                        </label>
+                        </span>
+                    </div>
+                </li>
+
+                <li onmouseover="handleHover(event)" onmouseleave="handleMouseLeave(event)">
+                    <label class="question"> How much would you pay for the new product?</label>
+                    <br>
+                    <span>
+                        $
+                        <input style="width:100px"/>
+                        .
+                        <input style="width:40px">
+                        cents
+                    </span>
+                </li>
+
+                <li onmouseover="handleHover(event)" onmouseleave="handleMouseLeave(event)">
+                    <label class="question">What feature would you like to see in the new product?</label>
+                    <br>
+                    <input style="width:80vw">
+                </li>
+            </ul>
+            
+        </form>
+        <script>
+            handleHover = (e) => {
+                let liEle = e.target.closest('li')
+                liEle.style.backgroundColor = '#fff7c0'
+            }
+            
+            handleMouseLeave = (e) => {
+                let liEle = e.target.closest('li')
+                liEle.style.backgroundColor='white'
+            }
+        </script>
+    </body>
+</html>
