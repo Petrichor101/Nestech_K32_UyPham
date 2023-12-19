@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button{
+            width:6vw
+        }
+    </style>
+    <img src="https://i.pngimg.me/thumb/f/720/comdlpng6950953.jpg" style="height:20vw; display: block;" id="myImg" onload="init()">
+    <table border="0" style="right: 5vw; position: absolute;">
+        <tr>
+            <td></td>
+            <td>
+                <button onClick="moveUp()" style="display: none;">Move up</button> 
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button onClick="moveLeft()">Move left</button>
+            </td>
+            <td></td>
+            <td>
+                <button onClick="moveRight()">Move right</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onClick="moveDown()" style="display: none;">Move down</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script src="ball.js"></script>
+</body>
+</html>

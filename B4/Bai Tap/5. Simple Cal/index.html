@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body style="
+            justify-content: center;
+            align-items: center;
+        ">
+        <style>
+            tr:nth-child(odd) {
+                height: 20%;
+            }
+
+            tr:nth-child(even) {
+                height: 20%;
+            }
+            td{
+                border: none;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            div{
+                width: 35vw;
+                max-width: 35vw;
+                height: 100%;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+                padding-right: 0.8vh;
+                padding-left: 0.8vh;
+                box-sizing: border-box;
+                color: darkblue;
+                overflow-x: hidden;
+                font-size: 2vw;
+                
+            
+            }
+            
+            .smallButton{
+                width: 80%;
+                height: 60%;
+                border-radius: 8px;
+                border-width: 0.005rem;
+                background-color: white;
+                color: darkblue;
+                font-size: 2vw;
+
+            }
+        </style>
+        <table border="1" style="margin: auto; height: 50vh;position: relative; border-radius: 10px; width: 35vw; background-color: navajowhite;">
+            <tbody>
+                <tr>
+                    <td colspan="5">
+                        <div id="screen">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="1">1</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="2">2</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="3">3</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="4">4</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="5">5</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="6">6</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="7">7</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="8">8</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="9">9</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="*">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="clear">C</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="0">0</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="=">=</button></td>
+                    <td><button class="smallButton" onclick="handleClick(event)" value="/">/</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="index.js"></script>
+    </body>
+</html>

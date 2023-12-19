@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 8*</title>
+</head>
+<body>
+    <style>
+        th{
+            padding: 10px;
+        }
+        td{
+            min-height: 2vh;
+            
+        }
+    </style>
+    <h1>Bài 1</h1>
+    <table>
+        <tr>
+            <td>a = <input id ='a' oninput="bai1()" placeholder="0"></td>
+            <td>b = <input id='b' oninput="bai1()" placeholder="1"></td>
+            <td id="result"></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Bài 2</h1>
+    <table>
+        <tr>
+            <td>Tuổi:</td>
+            <td><input id = 'age' oninput="bai2()"></td>
+            <td id="allowed"></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Bài 3</h1>
+    <table>
+        <tr>
+            <td>
+                Số:
+            </td>
+            <td>
+                <input id="n" oninput="bai3()">
+            </td>
+            <td id="comp">
+            
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Bài 4</h1>
+    <table>
+        <tr>
+            <td>
+                a: 
+            </td>
+            <td>
+                <input id="x">
+            </td>
+            <td>
+                <button onclick="bai4(event)">Tìm số lớn nhất</button>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                b:
+            </td>
+            <td>
+                <input id="y">
+            </td>
+            <td id="max">
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                c:
+            </td>
+            <td>
+                <input id="z">
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Bài 5</h1>
+    <form id="addStudent" onsubmit="bai5(event)">
+        <table>
+            <tr>
+                <td>
+                    Tên:
+                    <input class="stdInput">
+                </td>
+                <td>
+                    Điểm kiểm tra:
+                    <input class="stdInput"/>
+                </td>
+                <td>
+                    Điểm thi giữa kỳ:
+                    <input class="stdInput">
+                </td>
+                <td>
+                    Điểm thi cuối kỳ:
+                    <input class="stdInput">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">
+                    <input type="submit" value="+">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <p>Công thức tính điểm trung bình HK I: (KT*4 + GHK * 2 + CHK * 3) / 9</p>
+    <p id="ALERT" style="color: red;"></p>
+
+    <table border="1" id="bxh" style="margin: auto; margin-bottom: 10vh;">
+        <thead>
+            <tr>
+                <th colspan="3">
+                    BXH
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    STT
+                </th>
+                <th>
+                    TÊN
+                </th>
+                <th>
+                    ĐIỂM TB
+                </th>
+            </tr>
+        </thead>
+    </table>
+
+    <div id="infoBox" style="
+        display: none; 
+        position: absolute; 
+        border: 1px solid black; 
+        padding: 10px; 
+        border-radius: 8px;
+        background-color: palegreen;
+        
+        ">
+    
+
+    </div>
+
+    <hr>
+    <h1> Bài 6</h1>
+    <form onsubmit="bai6(event)">
+        <table>
+            <tr>
+                <td>
+                    Doanh số:
+                </td>
+                <td>
+                    <input> đơn vị
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Đơn giá bán:
+                </td>
+                <td>
+                    <input> VNĐ
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    % Hoa hồng:
+                </td>
+                <td>
+                    <input value="5" style="width: 20px;"> %
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Số tiền hoa hồng:</button></td>
+                <td id="hh">
+        
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h1>Bài 7</h1>
+    <form onsubmit="bai7(event)">
+        <table>
+            <tr>
+                <td>
+                    Thời gian gọi điện thoại trong tháng:
+                </td>
+                <td>
+                    <input style="width: 30px;"> giờ
+                </td>
+                <td>
+                    <input style="width: 30px;"> phút
+                </td>
+                <td>
+                    <input style="width: 30px;"> giây
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td style="text-align: center;">
+                    <button type="submit">Tiền cước: </button>
+                </td>
+                <td style="text-align: right;" id="tiencuoc">
+                    0
+                </td>
+                <td>
+                    VNĐ
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cước điện thoại là 1000 VNĐ/phút
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    
+    <script src="index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <table>
+        <tr>
+            <td>
+                Height (cm)
+            </td>
+            <td>
+                Weight (kg)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="height">
+            </td>
+            <td>
+                <input id="weight">
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom: 1px solid black;">
+                BMI
+            </td>
+            <td style="border-bottom: 1px solid black;">
+                Interpretation
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BMI < 18.5
+            </td>
+            <td>
+                Underweight
+            </td>
+        </tr>
+        <tr>
+            <td>
+                18.5 ≤ BMI < 25.0
+            </td>
+            <td>
+                Normal
+            </td>
+        </tr>
+        <tr>
+            <td>
+                25 ≤ BMI < 30.0
+            </td>
+            <td>
+                Overweight
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom: 1px solid black;">
+                30.0 ≤ BMI
+            </td>
+            <td style="border-bottom: 1px solid black;">
+                Obese
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="result(event)" style="margin: auto; position: relative; display: block;">GET BMI</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="resultBMI">
+                
+            </td>
+            <td id="conclusion">
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

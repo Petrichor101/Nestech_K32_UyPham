@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Bài tập 9</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    <table>
+        <tr>
+            <td>
+                <input id="Cd" oninput="ctof(event)">
+            </td>
+            <td>
+                °C
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="Fd" oninput="ftoc(event)">
+            </td>
+            <td>
+                °F
+            </td>
+        </tr>
+    </table>
+
+    
+    <hr>
+
+        <h1>Bài 2</h1>
+        <table>
+            <tr>
+                <td>
+                    <input id="m" oninput="mtoft(event)">
+                </td>
+                <td>
+                    m
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="ft" oninput="fttom(event)">
+                </td>
+                <td>
+                    ft
+                </td>
+            </tr>
+        </table>
+
+    <hr>
+    <h1>Bài 3</h1>
+
+    <table>
+        <tr>
+            <td>
+                Độ dài cạnh a:
+            </td>
+            <td>
+                <input id="sqra" oninput="bai3(event)">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="sqrArea">
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Bài 4</h1>
+    <table>
+        <tr>
+            <td>
+                Chiều dài:
+            </td>
+            <td>
+                <input id="length">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Chiều rộng:
+            </td>
+            <td>
+                <input id="width">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="bai4(event)">Tính diện tích</button>
+            </td>
+            <td id="rectResult">
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Bài 5</h1>
+    <form onsubmit="bai5(event)">
+        <table>
+            <tr>
+                <td>
+                    Cạnh kề a:
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cạnh kề b:
+                    
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Diện tích hình tam giác:</button>
+                </td>
+                <td id="triS">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+    <h1>Bài 6 & 7</h1>
+    <form onsubmit="bai6(event)">
+        <table>
+            <tr>
+                <td colspan="4" style="text-align: center;">
+                    ax^2 + bx + c = 0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input value="0" style="width: 30px;">x^2 +
+                </td>
+                <td>
+                    <input value="0" style="width: 30px;">x +
+                </td>
+                <td>
+                    <input value="0" style="width: 30px;">
+                </td>
+                <td>
+                    = 0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Result</button>
+                </td>
+                <td colspan="3" id = 'x'>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h1>Bài 8</h1>
+    <table>
+        <tr>
+            <td>
+                Tuổi:
+            </td>
+            <td>
+                <input oninput="bai8(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kết quả:
+            </td>
+            <td id="ageResult">
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Bài 9</h1>
+
+    <form onsubmit="bai9(event)">
+        <table>
+            <tr>
+                <td>
+                    Cạnh a:
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cạnh b:
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cạnh c:
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Kết quả</button>
+                </td>
+                <td id="isTri">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <h1>Bài 10</h1>
+    <img src="https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2023/VTTQ/thang5/gia-ban-le-dien.png"> 
+    <table>
+        <tr>
+            <td>
+                Lượng điện tiêu thụ
+            </td>
+            <td>
+                <input onchange="bai10(event)">kWh
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Giá điện:
+            </td>
+            <td id="giadien">
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Bài 11</h1>
+    <table align="center" border="0" cellpadding="0" cellspacing="0"
+        style="color:rgb(0, 0, 0); font-family:arial,helvetica,sans-serif; font-size:12px; max-width:100%; width:650px">
+        <tbody>
+            <tr>
+                <td style="height:37.45pt; width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><strong><span
+                                        style="background-color:unset !important">Bậc thuế</span></strong></span></span></p>
+                </td>
+                <td style="height:37.45pt; width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><strong><span
+                                        style="background-color:unset !important">Phần thu nhập tính
+                                        thuế/năm</span></strong></span></span></p>
+    
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><strong><span
+                                        style="background-color:unset !important">(triệu đồng)</span></strong></span></span>
+                    </p>
+                </td>
+                <td style="height:37.45pt; width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><strong><span
+                                        style="background-color:unset !important">Phần thu nhập tính
+                                        thuế/tháng</span></strong></span></span></p>
+    
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><strong><span
+                                        style="background-color:unset !important">(triệu đồng)</span></strong></span></span>
+                    </p>
+                </td>
+                <td style="height:37.45pt; width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><strong><span
+                                        style="background-color:unset !important">Thuế suất
+                                        (%)</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">1</span></span></span></p>
+                </td>
+                <td style="width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Đến 60</span></span></span></p>
+                </td>
+                <td style="width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Đến 5</span></span></span></p>
+                </td>
+                <td style="width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">5</span></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">2</span></span></span></p>
+                </td>
+                <td style="width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 60 đến 120</span></span></span></p>
+                </td>
+                <td style="width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 5 đến 10</span></span></span></p>
+                </td>
+                <td style="width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">10</span></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">3</span></span></span></p>
+                </td>
+                <td style="width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 120 đến 216</span></span></span></p>
+                </td>
+                <td style="width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 10 đến 18</span></span></span></p>
+                </td>
+                <td style="width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">15</span></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">4</span></span></span></p>
+                </td>
+                <td style="width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 216 đến 384</span></span></span></p>
+                </td>
+                <td style="width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 18 đến 32</span></span></span></p>
+                </td>
+                <td style="width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">20</span></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">5</span></span></span></p>
+                </td>
+                <td style="width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 384 đến 624</span></span></span></p>
+                </td>
+                <td style="width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 32 đến 52</span></span></span></p>
+                </td>
+                <td style="width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">25</span></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">6</span></span></span></p>
+                </td>
+                <td style="width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 624 đến 960</span></span></span></p>
+                </td>
+                <td style="width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 52 đến 80</span></span></span></p>
+                </td>
+                <td style="width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">30</span></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:39.15pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">7</span></span></span></p>
+                </td>
+                <td style="width:189pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 960</span></span></span></p>
+                </td>
+                <td style="width:147pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">Trên 80</span></span></span></p>
+                </td>
+                <td style="width:63pt">
+                    <p style="text-align:center"><span style="font-size:14px"><span
+                                style="font-family:arial,helvetica,sans-serif"><span
+                                    style="background-color:unset !important">35</span></span></span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        bla bla blo blo THUẾ KHÓ TÍNH QUÁ BRO
+    </table>
+    <hr>
+    <h1>
+        Bài 12
+    </h1>
+    <form onsubmit="bai12(event)">
+        <table>
+            <tr>
+                <td>
+                    Số tiền ban đầu
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sô tháng
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lãi suất
+                </td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Lãi suất ngân hàng:</button>
+                </td>
+                <td id="tonglaisuat">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
