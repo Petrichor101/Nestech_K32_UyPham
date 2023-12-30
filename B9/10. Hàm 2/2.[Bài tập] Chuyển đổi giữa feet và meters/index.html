@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input id="m" oninput="mtoft(event)" pattern="[0-9]+" type="number">
+            </td>
+            <td>
+                m
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/TVWQn.png" width="100px">
+            </td>
+            <td>
+                <input id="ft" oninput="fttom(event)" pattern="[0-9]+" type="number">
+            </td>
+            <td>
+                ft
+            </td>
+        </tr>
+    </table>
+    <script>
+        mtoft = (e) => {
+            let m = parseFloat(e.target.value)
+            let ft = 3.279 * m
+            document.getElementById('ft').value = ft
+        }
+
+        fttom = (e) => {
+            let ft = parseFloat(e.target.value)
+            let m = 0.305 * ft
+            document.getElementById('m').value = m
+        }
+    </script>
+</body>
+</html>

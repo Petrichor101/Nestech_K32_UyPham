@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    Nhập số x: <input oninput="b1(event)" type="number" pattern="[0-9]*">
+    <p id ='b1result'>
+    
+    </p>
+    <hr>
+    
+    <h1>Bài 2</h1>
+    Nhập bán kính r của đường tròn: <input oninput="b2(event)" type="number" pattern="[0-9]*">m
+    <p id='b2result'></p>
+
+    <hr>
+
+    <h1>Bài 3</h1>
+    Nhập số để tính giai thừa <input oninput="b3(event)" type="number" pattern="[0-9]*">
+    <p id="b3result"></p>
+
+    <hr>
+    <h1>Bài 4</h1>
+    Nhập ký tự để kiểm tra <input oninput="b4(event)">
+    <p id="b4result"></p>
+
+    <hr>
+    <h1>Bài 5</h1>
+    <form onsubmit="b5(event)">
+        <table>
+            <tr>
+                <td>
+                    a:    
+                </td>
+                <td>
+                    <input name="a" type="text" pattern="\d+(\.\d*)?" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    b:
+                </td>
+                <td>
+                    <input name="b" type="text" pattern="\d+(\.\d*)?" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    c:
+                </td>
+                <td>
+                    <input name="c" type="text" pattern="\d+(\.\d*)?" value="0">
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Min?</button>
+    </form>
+    <p id="b5result">
+    </p>
+
+    <hr>
+    <h1>Bài 6</h1>
+    Nhập số để kiểm tra: <input oninput="b6(event)" type="number" pattern="[0-9]*">
+    <p id="b6result"></p>
+
+    <hr>
+    <h1>Bài 7</h1>
+    <table>
+        <tr>
+            <td>
+                <center>
+                    Số thứ nhất
+                </center>
+            </td>
+            <td>
+                <center>
+                    Số thứ hai
+                </center>
+            </td>
+        </tr>
+        <form onsubmit="b7(event)">
+            <tr>
+                <td>
+                    <input name="a" type="text" pattern="\d+(\.\d*)?" value="0">
+                </td>
+                <td>
+                    <input name="b" type="text" pattern="\d+(\.\d*)?" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Đổi chỗ</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <hr>
+    <h1>Bài 8</h1>
+    <table>
+        <tr>
+            <td>
+                <button onclick="b8()">Khởi tạo mảng số nguyên và đảo ngược mảng đó</button>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">
+                Mảng được khởi tạo: 
+            </td>
+            <td id="b8arr">
+
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">
+                Mảng khi được đảo ngược:
+            </td>
+            <td id="b8rev">
+
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bài 9</h1>
+    <button onclick="b9khoitao()">Khởi tạo máng</button>
+    <p id="b9arr"></p>
+    <input oninput="b9tim(event)">
+
+    <p id="b9result"></p>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

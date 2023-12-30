@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    <button onclick="alertMessage()">Xin chào</button>
+    <hr>
+    <h1>Bài 2</h1>
+    Hãy nhập số
+    <input onchange="bai2(event)" type="number" pattern="[0-9]*">
+
+    <hr>
+    <h1>Bài 3</h1>
+
+    <form onsubmit="bai3(event)">
+        <table>
+            <tr>
+                <td>
+                    Số thứ nhất:
+                </td>
+                <td>
+                    <input name="no1" type="number" pattern="[0-9]*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số thứ hai:
+                </td>
+                <td>
+                    <input name="no2" type="number" pattern="[0-9]*">
+                </td>
+            </tr>
+            <td>
+                <button type="submit">Kết quả</button>
+            </td>
+        </table>
+    </form>
+    <hr>
+    <h1>Bài 4</h1>
+    <button onclick="addNumbers()">Bắt đầu</button>
+
+    <hr>
+    <h1>Bài 5</h1>
+    <button onclick="bai5()">Bắt đầu</button>
+    
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

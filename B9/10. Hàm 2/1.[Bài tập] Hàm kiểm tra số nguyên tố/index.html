@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        Kiểm tra số nguyên tố
+    </h1>
+
+    <table>
+        <tr>
+            <td>
+                Nhập số để kiểm tra: 
+            </td>
+            <td>
+                <input onchange="isPrime(event)" value="0" pattern="[0-9]+" type="number" >
+            </td>
+        </tr>
+        <tr>
+            <td id="result" colspan="2" pat>
+
+            </td>
+        </tr>
+    </table>
+    <script>
+        isPrime = (e) => {
+            let x = parseFloat(e.target.value)
+            let prime = true
+            for (let i = 2; i <= Math.sqrt(x); i++) {
+                if (x % i == 0) {
+                    prime = false
+
+                }
+            }
+            document.getElementById('result').innerText = `${x} ${prime ? '' : 'không phải'} là số nguyên tố`
+        }
+
+    </script>
+</body>
+</html>
