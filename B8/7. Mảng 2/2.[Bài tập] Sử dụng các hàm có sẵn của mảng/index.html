@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    <table>
+        <tr>
+            <td>
+                <input id="el">
+            </td>
+            <td>
+                <button onclick="bai1Add()">
+                    Thêm vào mảng
+                </button>
+            </td>
+            <td>
+                <button onclick="bai1Del()">
+                    Xóa
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Các thành phần trong mảng:
+            </td>
+            <td id="arr">
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="bai1Main()">
+                    Ghép
+                </button>
+            </td>
+            <td id="str">
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Bài 2</h1>
+        <table>
+            <tr>
+                <td>
+                    <input type="number" pattern="[0-9]*" title="Please enter a positive integer" oninput="bai2(event)">
+                </td>
+            </tr>
+            <tr>
+                <td id="result">
+                    
+                </td>
+            </tr>
+        </table>
+
+    <hr>
+    <h1>Bài 3</h1>
+    <table>
+        <tr>
+            <td>
+                <input oninput="bai3(event)">
+            </td>
+        </tr>
+        <tr>
+            <td id='newStr'>
+
+            </td>
+        </tr>
+    </table>
+    <script src="index.js">
+    
+    </script>
+</body>
+</html>

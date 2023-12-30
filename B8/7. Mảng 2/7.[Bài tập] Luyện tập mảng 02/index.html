@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    <table>
+        <tr>
+            <td>
+                <button onclick="bai1()">Bắt đầu</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="b1result">
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Bài 2</h1>
+    <table>
+        <tr>
+            <td>
+                Nhập vào một chuỗi
+            </td>
+            <td>
+                <input onchange="bai2(event)"> 
+            </td>
+            <td>
+                Ấn "Enter" để bắt đầu đảo ngược
+            </td>
+        </tr>
+        <tr>
+            <td id="b2result" colspan="3">
+
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bài 3</h1>
+    <table>
+        <tr>
+            <td>
+                <button onclick="bai3()">Bắt đầu</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="b3arr">
+
+            </td>
+        </tr>
+        <tr>
+            <td id="b3result">
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Bài 4</h1>
+    <table>
+        <tr>
+            <td>
+                Nhập vào chuỗi: 
+            </td>
+            <td>
+                <input oninput="bai4(event)">
+            </td>
+        </tr>
+        <tr>
+            <td id="b4result" colspan="2">
+
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bài 5</h1>
+    <form onsubmit="bai5(event)">
+        <table>
+            <tr>
+                <td>
+                    Chuỗi 1
+                </td>
+                <td>
+                    <input name="str1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Chuỗi 2
+                </td>
+                <td>
+                    <input name="str2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="So sánh">
+                </td>
+                <td id="b5result">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+    <h1>Bài 6</h1>
+    <table>
+        <tr>
+            <td>
+                Nhập vào chuỗi:
+            </td>
+            <td>
+                <input oninput="bai6(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Chuỗi mới:
+            </td>
+            <td id="b6result">
+
+            </td>
+        </tr>
+    </table>
+    
+    <script src="index.js"></script>
+</body>
+</html>
